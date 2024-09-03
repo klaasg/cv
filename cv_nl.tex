@@ -30,7 +30,7 @@
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 %\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
+\usepackage{changepage}
 \usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
@@ -56,7 +56,7 @@
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
-\setlength{\headheight}{-25pt}
+\setlength{\headheight}{-15pt}
 \setlength{\textheight}{860pt} %%% FOUND IT!!!!! BYE BYE FOOTER
 \begin{document}
 
@@ -93,21 +93,39 @@
 %	'In het kort' SECTION
 %----------------------------------------------------------------------------------------
 
-\section{In het kort}
-Ik ben een \textbf{gemotiveerde} student Informatica.
-Ik doe deze opleiding heel graag en dat zorgt ervoor dat ik \textbf{hard werk} aan de vele projecten.
-In het vakgebied interesseert mij heel veel: softwareontwikkeling (full-stack), netwerken, systeembeheer \dots \hspace{2pt}
-Ik ben ook een \textbf{kritisch denker} met een algemene interesse naar kennis.
+% \section{In het kort}
+% Ik ben een \textbf{gemotiveerde} student Informatica.
+% Ik doe deze opleiding heel graag en dat zorgt ervoor dat ik \textbf{hard werk} aan de vele projecten.
+% In het vakgebied interesseert mij heel veel: softwareontwikkeling (full-stack), netwerken, systeembeheer \dots \hspace{2pt}
+% Ik ben ook een \textbf{kritisch denker} met een algemene interesse naar kennis.
 
-Overigens wandel ik graag en soms vindt u mij op een koersfiets.
+% Overigens wandel ik graag en soms vindt u mij op een koersfiets.
+\vspace{-15pt}
+\begin{adjustwidth}{50pt}{50pt}
+    \textit{Ik ben een gedreven softwareontwikkelaar die snel en compleet werk kan leveren.
+    Ik ben ook een een goede collega die het team zal proberen helpen wanneer mogelijk.
+    In mijn vrije tijd, naast lopen en fietsen, heb ik al meerdere embedded hobby projectjes gedaan. Ik vertel er graag meer over!}
+\end{adjustwidth}
+\vspace{10pt}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+\section{Ervaring}
+
+\cventrywithimage{2023-heden}{Firmware engineer}{Sensolus}{\newline C, Embedded software, Zephyr RTOS, IoT, BLE, electronics}{}{}{pictures/sensolus.png}  % Arguments not required can be left empty
+\cventrywithimage{2023\\\small{Vier weken}}{Firmware engineer stage}{Sensolus}{\newline C, Embedded software, Zephyr RTOS}{}{}{pictures/sensolus.png}  % Arguments not required can be left empty
+\cventrywithimage{2022\\\small{Vier maanden}}{Studentenjob begeleiden werkcolleges Python}{Universiteit Gent}{\newline Begeleiden van werkcolleges van het opleidingsonderdeel Programmeren, dat gegeven wordt aan eerstejaarsstudenten in de faculteit Wetenschappen}{}{}{pictures/ugent.jpg}  % Arguments not required can be left empty
+\cventrywithimage{2022-2023}{Penningmeester}{Zeus WPI}{\newline Penningmeester en algemeen bestuurslid van de werkgroep informatica aan UGent}{}{}{pictures/zeus.png}
+\cventrywithimage{2021\\\small{Vijf weken}}{Studentenjob softwareontwikkeling}{MEET HET}{\newline Python (flask), JavaScript}{}{}{pictures/meethet.png}  % Arguments not required can be left empty
+\cventrywithimage{2020\\\small{Eén maand}}{Studentenjob web developer}{IDLab (UGent - imec)}{\newline Full stack - JavaScript.}{De ontwikkeling van een prototype Solid app}{}{pictures/idlab.jpg}  % Arguments not required can be left empty
+% \cventry{2018-2019}{Studentenjob verkoper}{Vereecke Middelkerke}{}{}{2 keer één maand}  % Arguments not required can be left empty
+
+
 \section{Opleiding}
 
-\cventry{2021--heden}{Master of Science in de Informatica}{Universiteit Gent}{}{}{}
+\cventry{2021--2024}{Master of Science in de Informatica}{Universiteit Gent}{}{}{}
 \cventry{2019--2021}{Honoursprogramma 'Quetelet Colleges'}{Universiteit Gent}{\newline Extracurriculair programma met lezingen over wetenschap, cultuur en samenleving}{}{}
 \cventry{2018--2021}{Bachelor of Science in de Informatica}{Universiteit Gent}{\newline Geslaagd met onderscheiding}{}{}
 \cventry{2012--2018}{Latijn-wiskunde}{Sint-Godelievecollege Gistel}{}{}{}
@@ -118,52 +136,54 @@ Overigens wandel ik graag en soms vindt u mij op een koersfiets.
 %%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
 %%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the %%world. I found that it has, in fact, not.}
 
-\section{Ervaring}
-
-\cventrywithimage{2023}{Firmware engineer stage}{Sensolus}{\newline C, Embedded software, Zephyr, RTOS}{}{Vier weken}{pictures/sensolus.png}  % Arguments not required can be left empty
-\cventrywithimage{2022}{Studentenjob begeleiden werkcolleges Python}{Universiteit Gent}{\newline Begeleiden van werkcolleges van het opleidingsonderdeel Programmeren, dat gegeven wordt aan eerstejaarsstudenten in de faculteit Wetenschappen}{}{Vier maanden}{pictures/ugent.jpg}  % Arguments not required can be left empty
-\cventrywithimage{2022-heden}{Penningmeester}{Zeus WPI}{\newline Penningmeester en algemeen bestuurslid van de werkgroep informatica aan UGent}{}{}{pictures/zeus.png}
-\cventrywithimage{2021}{Studentenjob softwareontwikkeling}{MEET HET}{\newline Python (flask), JavaScript}{}{Vijf weken}{pictures/meethet.png}  % Arguments not required can be left empty
-\cventrywithimage{2020}{Studentenjob web developer}{IDLab (UGent - imec)}{\newline Full stack - JavaScript.}{De ontwikkeling van een prototype Solid app}{Één maand}{pictures/idlab.jpg}  % Arguments not required can be left empty
-\cventry{2018-2019}{Studentenjob verkoper}{Vereecke Middelkerke}{}{}{2 keer één maand}  % Arguments not required can be left empty
-
 \section{Skills
     \hspace{12pt}
     \includegraphics[height=15pt]{pictures/c++.png}
     \hspace{14pt}
     \includegraphics[height=15pt]{pictures/python.png}
-    \hspace{12pt}
-    \includegraphics[height=15pt]{pictures/js.png}
-    \hspace{6pt}
-    \includegraphics[height=15pt]{pictures/java.png}
-    \hspace{0pt}
-    \includegraphics[height=15pt]{pictures/dots.png}
-}
-
-\cvlistdoubleitem{C, C++ {\footnotesize (.NET)}}{JavaScript {\footnotesize (React, Vue)}}
-\cvlistdoubleitem{Python {\footnotesize (Django, Flask)}}{Java {\footnotesize (Spring)}, Kotlin {\footnotesize (Android)}}
-\cvlistdoubleitem{Haskell, Prolog}{R}
-%\cvlistitem{Haskell, Prolog}
-%\cvlistitem{x86 assembly}
-
-\section{Extra
-    \hspace{10pt}
-    \includegraphics[height=15pt]{pictures/linux.png}
     \hspace{13pt}
     \includegraphics[height=15pt]{pictures/bash.png}
     \hspace{5pt}
-    \includegraphics[height=15pt]{pictures/docker.png}
-    \hspace{7pt}
-    \includegraphics[height=15pt]{pictures/postgres.png}
-    \hspace{5pt}
+    \includegraphics[height=15pt]{pictures/java.png}
+    \hspace{2pt}
     \includegraphics[height=15pt]{pictures/dots.png}
 }
 
+\cvlistitem{C, C++, Embedded programming, RTOS}
+\cvlistitem{Drivers voor diverse sensoren, Bluetooth, WiFi en LTE communicatie}
+%{JavaScript {\footnotesize (React, Vue)}}
+\cvlistitem{Automatisatie en scripting met Python en Bash}
+\cvlistitem{Java en Python web backend applicaties}%, Kotlin {\footnotesize (Android)}}
+%\cvlistdoubleitem{Haskell, Prolog}{R}
+%\cvlistitem{x86 assembly}
+
+\section{Extra
+\hspace{10pt}
+\includegraphics[height=12pt]{pictures/git.png}
+\hspace{6pt}
+\includegraphics[height=15pt]{pictures/linux.png}
+\hspace{7pt}
+\includegraphics[height=15pt]{pictures/docker.png}
+\hspace{7pt}
+\includegraphics[height=15pt]{pictures/postgres.png}
+\hspace{12pt}
+\includegraphics[height=15pt]{pictures/js.png}
+\hspace{6pt}
+\includegraphics[height=15pt]{pictures/dots.png}
+}
+
 %\cvlistitem{Penningmeester Zeus WPI (werkgroep informatica UGent) 2022-2023}
-\cvlistdoubleitem{Linux, Bash, Docker en serverbeheer}{Git, Jenkins}
-\cvlistdoubleitem{ROS}{Unity3D met C\# scripting}
-\cvlistdoubleitem{HTTP, REST, HTML, \dots}{Databanken, SQL}
-\cvlistitem{CAD basics in OpenSCAD}
+\cvlistdoubleitem{Git, Jenkins}{Linux, Bash, Docker, systeembeheer}
+\cvlistdoubleitem{Robot Operating System (ROS)}{JavaScript scripting en webdevelopment}
+%{Unity3D met C\# scripting}
+%\cvlistdoubleitem{HTTP, REST, HTML, \dots}%{Databases, SQL}
+\cvlistdoubleitem{Databanken, SQL}{CAD basis in OpenSCAD}
+\cvlistitem{Winnaar \textbf{Battlefield of Things Hackathon} van Belgische Defensie}
+\cvlistitem{Finalist \textbf{Cyber Securty Challenge Belgium}}
+\cvlistitem{2de plaats \textbf{N5 Tech Challenge}}
+%\cvlistitem{Animatorattest bij Kazou}
+%{Android development}
+%\cvlistitem{Dutch: native, English: fluent, French: conversational}
 
 %\section{Wat houdt mij bezig}
 %Ik probeer graag de vele projecten voor mijn opleiding te perfectioneren. Daardoor is mijn vrije tijd echter beperkt.
